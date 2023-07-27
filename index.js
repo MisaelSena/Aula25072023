@@ -83,4 +83,14 @@ function exercio6(){
     }
     
 }
-exercio6();
+//exercio6();
+
+//Crie um programa que imprima os números de 1 a 10 em ordem crescente.
+
+function exercio7(){   
+
+    for(i=1; i<=10; i++){
+        console.log(i);
+    }
+}
+exercio7();
