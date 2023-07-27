@@ -1,20 +1,20 @@
 const prompt = require('prompt-sync')();
 
 //Escreva um programa que imprima "Olá, mundo!" na tela.
-function exercio1(){
+function exercicio1(){
     console.log("Hello World!");
 }
-//exercio1();
+//exercicio1();
 
 //Crie um programa que solicite o nome do usuário e, em seguida, imprima uma mensagem personalizada com o nome inserido.
-function exercio2(){
+function exercicio2(){
     let nome = prompt("Informe seu nome: ");
     console.log(`Olá ${nome}!`);
 }
-//exercio2();
+//exercicio2();
 
 //Escreva um programa que calcule a soma de dois números inteiros e exiba o resultado.
-function exercio3(){
+function exercicio3(){
     let numero1 = parseInt(prompt("Informe o 1º Número Inteiro: "));
     let numero2 = parseInt(prompt("Informe o 2º Número Inteiro: "));
 
@@ -23,15 +23,15 @@ function exercio3(){
     console.log(`A soma dos números digitados foi: ${soma}`);
 
 }
-//exercio3();
+//exercicio3();
 
 //Crie um programa que receba a idade de uma pessoa e informe se ela é maior ou menor de idade.
-function exercio4(){
+function exercicio4(){
     let idade = parseInt(prompt("Informe a Idade: "));
 
     if(idade <= 0 ){
         console.log("Informe um valor maior que zero!");
-        return exercio4();
+        return exercicio4();
     }else if(idade < 18){
         console.log("A pessoa é menor de idade!");
     }else if(idade >= 18 && idade <= 122){
@@ -40,13 +40,13 @@ function exercio4(){
         console.log("A pessoa é a mais velha de todos os tempos!");
     }else{
         console.log("Valor Inválido! Informe apenas números!");
-        return exercio4();
+        return exercicio4();
     }
 }
-//exercio4();
+//exercicio4();
 
 //Faça um programa que verifique se um número é par ou ímpar
-function exercio5(){
+function exercicio5(){
     let numero = parseInt(prompt("Informe um número inteiro: "));
 
     let modulo = numero % 2;
@@ -57,13 +57,13 @@ function exercio5(){
         console.log(`Número ${numero} é Ímpar!`);
     }else{
         console.log("Valor Informado inválido!");
-        return exercio5();
+        return exercicio5();
     }
 }
-//exercio5();
+//exercicio5();
 
 //Escreva um programa que calcule a média de três números informados pelo usuário
-function exercio6(){
+function exercicio6(){
     let numeros = [];
     
 
@@ -83,20 +83,20 @@ function exercio6(){
     }
     
 }
-//exercio6();
+//exercicio6();
 
 //Crie um programa que imprima os números de 1 a 10 em ordem crescente.
 
-function exercio7(){   
+function exercicio7(){   
 
     for(i=1; i<=10; i++){
         console.log(i);
     }
 }
-//exercio7();
+//exercicio7();
 
 //Faça um programa que imprima os números pares de 1 a 20
-function exercio8(){   
+function exercicio8(){   
 
     for(i=1; i<=20; i++){
         let resto = i % 2;
@@ -106,16 +106,16 @@ function exercio8(){
         }        
     }
 }
-//exercio8();
+//exercicio8();
 
 //Crie um programa que determine se um número é primo ou não.
-function exercio9(){
+function exercicio9(){
     let numero = parseInt(prompt("Informe um número inteiro Maior que 1: "));
     let numeroPrimo = true;
 
     if(isNaN(numero)){
         console.log("Informe um número válido!");
-        return exercio9();
+        return exercicio9();
     }else{
         for(i = 2; i < numero; i++){
             if( numero % i === 0){
@@ -130,15 +130,37 @@ function exercio9(){
         
     }
 }
-//exercio9();
+//exercicio9();
 
 //Faça um programa que converta graus Celsius para Fahrenheit. F = C x 1,8 + 32
 
-function exercio10(){
+function exercicio10(){
 
     let grauCelsius = parseFloat(prompt("Informe a temperatura em Graus Celsius: "));
     let grauFahrenheit = grauCelsius*1.8 + 32;
 
     console.log(`${grauCelsius}°C correspondem a ${grauFahrenheit}°F`);
 }
-exercio10();
+//exercicio10();
+
+//Escreva um programa que receba uma lista de números e imprima apenas os números pares.
+
+function exercicio11(){
+    let numeros = [];
+    let numeroDigitado;
+    let sair = "x";
+
+    while(numeroDigitado != sair){
+        numeroDigitado = prompt("Digite um número ou x para sair: ");
+        numeros.push(numeroDigitado);        
+    }
+    if(numeroDigitado == "x"){
+        console.log("Os números Pares São: ");
+        for(i=0; i<numeros.length; i++){
+            if(numeros[i]%2 == 0){
+                console.log(numeros[i]);
+            }
+        }
+    }
+}
+exercicio11();
