@@ -186,4 +186,33 @@ function exercicio12(){
         console.log(`O Menor número digitado foi: ${menorNumero}`);
     }
 }
-exercicio12();
+//exercicio12();
+
+//13-Faça um programa que verifique se uma palavra é um palindromo (se pode ser lide da mesma forma de trás para frente).
+//14-Crie um programa que inverta a ordem dos elementos em uma lista
+//Para resolução do Exercício 13, utilizei a lógica de resolução do 14. Desta forma resolvi os dois num só algoritmo.
+
+
+function exercicio13e14(){
+    let palavra = "ana";
+    let conversao = [];
+    let palavraInvertidaArray = [];
+    let palavraInvertida = "";
+
+    for(i=0; i < palavra.length; i++){
+            conversao.push(i);
+    }
+    conversao.sort(function (a,b){return b-a});
+
+    for(i=0; i<palavra.length;i++){
+        palavraInvertidaArray.push(palavra[conversao[i]]);
+        palavraInvertida = palavraInvertida + palavraInvertidaArray[i].toString();
+    }
+    
+    if(palavra === palavraInvertida){
+        console.log("A palavra é um Palíndromo!");
+    }else{
+        console.log("A palavra não é um Palíndromo!");
+    }
+}
+exercicio13e14();
