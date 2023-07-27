@@ -106,5 +106,29 @@ function exercio8(){
         }        
     }
 }
-exercio8();
+//exercio8();
+
+//Crie um programa que determine se um número é primo ou não.
+function exercio9(){
+    let numero = parseInt(prompt("Informe um número inteiro Maior que 1: "));
+    let numeroPrimo = true;
+
+    if(isNaN(numero)){
+        console.log("Informe um número válido!");
+        return exercio9();
+    }else{
+        for(i = 2; i < numero; i++){
+            if( numero % i === 0){
+                numeroPrimo = false;
+            }
+        }
+        if(numeroPrimo){
+            console.log(`o número ${numero} é primo`);
+        }else{
+            console.log(`o número ${numero} não é primo`);
+        }
+        
+    }
+}
+exercio9();
 
