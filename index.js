@@ -194,7 +194,7 @@ function exercicio12(){
 
 
 function exercicio13e14(){
-    let palavra = "ana";
+    let palavra = prompt("Digite um nome: ");
     let conversao = [];
     let palavraInvertidaArray = [];
     let palavraInvertida = "";
@@ -215,4 +215,19 @@ function exercicio13e14(){
         console.log("A palavra não é um Palíndromo!");
     }
 }
-exercicio13e14();
+//exercicio13e14();
+function exercicio15(){
+    
+   let min = parseInt(prompt("Digite o menor número maior que zero: "));
+   let max = parseInt(prompt("Digite o maior número que desejar para o intervalo: "));
+   let numeroAleatorio = Math.random()*(max - min) + min;
+   let seuPalpite = parseInt(prompt("Digite o seu palpite: "));
+
+   if(seuPalpite === Math.floor(numeroAleatorio)){
+     console.log(`Parabéns! Você escolheu o número ${seuPalpite} que foi igual ao número ${Math.floor(numeroAleatorio)} escolhido pela máquina!`);
+   }else{
+    console.log(`Tente Outra Vez! Você escolheu o número ${seuPalpite} que foi diferente do número ${Math.floor(numeroAleatorio)} escolhido pela máquina!`);
+   }
+   
+}
+exercicio15();
