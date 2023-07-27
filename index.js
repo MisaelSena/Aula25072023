@@ -93,4 +93,18 @@ function exercio7(){
         console.log(i);
     }
 }
-exercio7();
+//exercio7();
+
+//Faça um programa que imprima os números pares de 1 a 20
+function exercio8(){   
+
+    for(i=1; i<=20; i++){
+        let resto = i % 2;
+        
+        if(resto === 0){
+            console.log(i);
+        }        
+    }
+}
+exercio8();
+
