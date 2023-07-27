@@ -1,0 +1,11 @@
+{
+  "name": "aula25072023",
+  "version": "1.0.0",
+  "description": "Exercícios da Aula de Lógica 25072023",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Misael Sena",
+  "license": "ISC"
+}

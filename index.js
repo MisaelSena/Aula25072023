@@ -41,5 +41,19 @@ function exercio4(){
         return exercio4();
     }
 }
-exercio4();
+//exercio4();
+function exercio5(){
+    let numero = parseInt(prompt("Informe um número inteiro: "));
 
+    let modulo = numero % 2;
+
+    if(modulo === 0){
+        console.log(`Número ${numero} é Par!`);
+    }else if(modulo < 0 || modulo >0){
+        console.log(`Número ${numero} é Ímpar!`);
+    }else{
+        console.log("Valor Informado inválido!");
+        return exercio5();
+    }
+}
+exercio5();
