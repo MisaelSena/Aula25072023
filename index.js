@@ -130,5 +130,15 @@ function exercio9(){
         
     }
 }
-exercio9();
+//exercio9();
 
+//Faça um programa que converta graus Celsius para Fahrenheit. F = C x 1,8 + 32
+
+function exercio10(){
+
+    let grauCelsius = parseFloat(prompt("Informe a temperatura em Graus Celsius: "));
+    let grauFahrenheit = grauCelsius*1.8 + 32;
+
+    console.log(`${grauCelsius}°C correspondem a ${grauFahrenheit}°F`);
+}
+exercio10();
