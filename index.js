@@ -163,4 +163,27 @@ function exercicio11(){
         }
     }
 }
-exercicio11();
+//exercicio11();
+
+//Escreva um programa que receba uma lista de números e retorne o maior e o menor valor
+function exercicio12(){
+    let numeros = [];
+    let numeroDigitado;
+    let sair = "x";
+
+    while(numeroDigitado != sair){
+        numeroDigitado = prompt("Digite um número ou x para sair: ");
+        if(numeroDigitado != sair){
+            numeros.push(parseFloat(numeroDigitado));
+        }
+                
+    }
+
+    if(numeroDigitado == sair){
+        let maiorNumero = Math.max(...numeros);
+        let menorNumero = Math.min(...numeros);
+        console.log(`O Maior número digitado foi: ${maiorNumero}`);
+        console.log(`O Menor número digitado foi: ${menorNumero}`);
+    }
+}
+exercicio12();
